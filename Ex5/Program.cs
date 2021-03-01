@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 /*
  * Ввести 4 строки в консоль. Вывести на консоль те строки, 
@@ -13,6 +14,7 @@ namespace Ex5
     {
         static void Main(string[] args)
         {
+            Console.InputEncoding = Encoding.Unicode;
             string[] inputStrings = new string[4];
             for (int i = 0; i < inputStrings.Length; i++)
             {
