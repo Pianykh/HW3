@@ -12,7 +12,8 @@ namespace Ex4
         static void Main(string[] args)
         {
             Console.InputEncoding = Encoding.Unicode;
-            string inputString = "Вчера я был на речке, там я купался и загорал, из-за того, что я уснул, то я очень обгорел.";
+            Console.WriteLine("Введите фразу:");
+            string inputString = Console.ReadLine();
             var wordsArray = inputString.Replace(",", "").Split(' ');
             int duplicates = 0;
             foreach (string word in wordsArray)
